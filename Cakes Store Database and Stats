@@ -1,0 +1,40 @@
+CREATE TABLE cakes 
+(id INTEGER PRIMARY KEY,name TEXT,Flavor TEXT,Icing TEXT,Price INTEGER);
+
+INSERT INTO cakes VALUES 
+(1,"Vanilla","Vanilla","White",10.99);
+INSERT INTO cakes VALUES 
+(2,"Chocolate","Chocolate","Chocolate",10.99);
+INSERT INTO cakes VALUES 
+(3,"Strawberry","Strawberry","White",10.99);
+INSERT INTO cakes VALUES 
+(4,"Mint chocolate chip","Mint chocolate","Chocolate",14.99);
+INSERT INTO cakes VALUES 
+(5,"Limon","Limon","White",10.99);
+INSERT INTO cakes VALUES 
+(6,"Tripple Chocolate","Chocolate","Chocolate",11.99);
+INSERT INTO cakes VALUES 
+(7,"IceCream cake","Vanilla","Whipped",14.99);
+INSERT INTO cakes VALUES 
+(8,"Pumpkin","Pumpkin spice","White",11.99);
+INSERT INTO cakes VALUES 
+(9,"Banana","Banana","White",14.99);
+INSERT INTO cakes VALUES 
+(10,"Oreo","Orea cookies","Chocolate",19.99);
+INSERT INTO cakes VALUES 
+(11,"Carrot","Carrot","Buttercreme",11.99);
+INSERT INTO cakes VALUES 
+(12,"Red velvet","Velvet","Buttercreme",11.99);
+INSERT INTO cakes VALUES 
+(13,"Marble","Vanilla and chocolate mix","White",14.99);
+INSERT INTO cakes VALUES 
+(14,"Cocanut","Cocanut","White",14.99);
+INSERT INTO cakes VALUES 
+(15,"Strawberrycheesecake","Cheesecake","none",14.99);
+
+--display the database ordered by price. 
+SELECT *FROM cakes ORDER BY price ASC;
+
+
+--display the sum of all cake prices:
+SELECT SUM (price) FROM cakes
